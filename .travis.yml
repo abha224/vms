@@ -9,7 +9,8 @@ addons:
 python:
   - "3.6.5"
 
-services: postgresql
+services: 
+  - postgresql
   - xvfb
 
 before_install:
