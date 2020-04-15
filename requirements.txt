@@ -1,18 +1,31 @@
-coverage == 3.7.1
-coveralls == 0.5
-Django == 1.11.17
-docopt == 0.6.2
-flake8 == 3.4.1
-psycopg2 == 2.7.4
-PyPDF2 == 1.26.0
-PyYAML == 3.11
-requests == 2.7.0
-phonenumbers == 8.8.8
-selenium == 3.4.0
-django-cities-light == 3.4.0
-Unidecode == 0.4.19
-django-braces == 1.9.0
-djangorestframework == 3.8.2
-django-easy-pdf == 0.1.1
-WeasyPrint == 0.34
-
+coverage==3.7.1
+coveralls==0.5
+Django==1.11.17
+django-autoslug-iplweb==1.9.4.dev0
+django-braces==1.14.0
+django-cities-light==3.5.0
+django-easy-pdf==0.1.1
+djangorestframework==3.11.0
+docopt==0.6.2
+flake8==3.4.1
+html5lib==1.0.1
+mccabe==0.6.1
+phonenumbers==8.11.5
+Pillow==7.0.0
+progressbar2==3.50.0
+psycopg2==2.8.4
+psycopg2-binary==2.8.4
+pyflakes==1.5.0
+PyPDF2==1.26.0
+python-decouple==3.3
+python-utils==2.4.0
+pytz==2019.3
+PyYAML==3.11
+reportlab==3.5.34
+requests==2.7.0
+selenium==3.141.0
+six==1.14.0
+Unidecode==1.1.1
+urllib3==1.25.8
+webencodings==0.5.1
+xhtml2pdf==0.2.4

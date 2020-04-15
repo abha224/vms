@@ -1,5 +1,7 @@
 language: python
 
+dist: xenial
+
 env:
   - MOZ_HEADLESS=1
 
@@ -18,6 +20,7 @@ before_install:
 
 install:
   - pip install -r requirements.txt
+  - pip3 install selenium --upgrade
 
 before_script:
   - psql -c "create role vmsadmin with createrole createdb login password '0xdeadbeef';" -U postgres
@@ -30,7 +33,7 @@ script:
   - python manage.py migrate --noinput --traceback --settings=vms.settings
   - python manage.py cities_light --force-import-all
   - flake8
-  - coverage run --source='.' manage.py test event -v 2
+  - coverage run --source='.' manage.py test job -v 2
   - coverage report -m
 
 after_success:
