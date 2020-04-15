@@ -1475,7 +1475,6 @@ class Settings(LiveServerTestCase):
             'users are currently associated with.'
         )
 
-
     # Feature not yet added.
     '''
     def test_duplicate_event(self):
