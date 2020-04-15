@@ -113,7 +113,7 @@ class EventsPage(BasePage):
         self.submit_form()
 
     def submit_form(self):
-        self.element_by_xpath(self.elements.GENERAL_SUBMIT_PATH).submit()
+        self.element_by_xpath(self.elements.GENERAL_SUBMIT_PATH).submit_form()
 
     def go_to_events_page(self):
         self.home_page.get_events_link().click()
