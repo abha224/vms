@@ -21,7 +21,8 @@ class BasePage(object):
         self.driver.find_element_by_xpath(key).send_keys(value)
 
     def element_by_xpath(self, path):
-        return self.driver.find_element_by_xpath(path)
+        elements = self.driver.find_elements_by_xpath(path)
+        return elements if elements else None
 
     def elements_by_xpath(self, path):
         elements = self.driver.find_elements_by_xpath(path)

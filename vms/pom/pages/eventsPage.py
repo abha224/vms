@@ -108,7 +108,7 @@ class EventsPage(BasePage):
         self.submit_form()
 
     def fill_organization_form(self, org):
-        self.element_by_xpath(self.elements.ORG_NAME).clear()
+        self.element_by_xpath(self.elements.ORG_NAME)
         self.send_value_to_xpath(self.elements.ORG_NAME, org)
         self.submit_form()
 
